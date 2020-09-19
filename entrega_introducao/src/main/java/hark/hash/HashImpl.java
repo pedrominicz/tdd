@@ -10,7 +10,7 @@ public class HashImpl implements Hash {
     private final Hash.Type hashType;
 
     public HashImpl() {
-        hashType = Hash.Type.MD5;
+        this(Hash.Type.MD5);
     }
 
     public HashImpl(final Hash.Type hashType) {
