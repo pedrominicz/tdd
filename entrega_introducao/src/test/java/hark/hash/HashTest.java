@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 public class HashTest {
 
-    private Hash hash;
+    private Hash hash = new HashImpl();
 
     @Test
     public void testMd5() {
