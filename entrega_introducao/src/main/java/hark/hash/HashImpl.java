@@ -1,5 +1,10 @@
 package hark.hash;
 
+import java.nio.charset.StandardCharsets;
+
+import com.google.common.hash.HashCode;
+import com.google.common.hash.Hashing;
+
 public class HashImpl implements Hash {
 
     private final Hash.Type hashType;
@@ -13,22 +18,32 @@ public class HashImpl implements Hash {
     }
 
     @Override
-    public String hashMessage(String message) {
+    public String hashMessage(final String message) {
         return hashMessage(hashType, message);
     }
 
     @Override
-    public String hashMessage(Type hashType, String message) {
+    // MD5 hashing is deprecated.
+    @SuppressWarnings("deprecation")
+    public String hashMessage(final Type hashType, final String message) {
+        final HashCode hashCode;
+
         switch (hashType) {
             case MD5:
-                return "6cd3556deb0da54bca060b4c39479839";
+                hashCode = Hashing.md5().hashString(message, StandardCharsets.UTF_8);
+                break;
             case SHA1:
-                return "943a702d06f34599aee1f8da8ef9f7296031d699";
+                hashCode = Hashing.sha1().hashString(message, StandardCharsets.UTF_8);
+                break;
             case SHA256:
-                return "315f5bdb76d078c43b8ac0064e4a0164612b1fce77c869345bfc94c75894edd3";
+                hashCode = Hashing.sha256().hashString(message, StandardCharsets.UTF_8);
+                break;
+            default:
+                // The default branch should never be reached.
+                throw new RuntimeException("Unreachable");
         }
 
-        throw new RuntimeException("Unreachable");
+        return hashCode.toString();
     }
 
 }
