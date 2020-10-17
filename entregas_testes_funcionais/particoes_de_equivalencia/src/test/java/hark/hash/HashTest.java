@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class HashTest {
 
-    private final Hash hash = null;
+    private final Hash hash = new HashImpl();
 
     private final String message = "Hello, world!";
 
