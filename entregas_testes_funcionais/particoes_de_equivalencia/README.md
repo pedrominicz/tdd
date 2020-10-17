@@ -12,7 +12,7 @@ Dividimos os testes da função `hashMessage` em três partições, uma para cad
 A verificação de _hashs_ é feita pela função `verifyMessage`.
 
     // Verify with a specifig algorithm.
-    public String verifyMessage(final Type hashType, final String checksum, final String message);
+    public boolean verifyMessage(final Type hashType, final String checksum, final String message);
 
 Qualquer sequência de 128-bits é um _hash_ MD5 válido, qualquer sequência de 160-bits é um _hash_ SHA1 válido e, finalmente, qualquer sequência de 256-bits é um _hash_ SHA256 válido. Para simplicidade, a função `verifyMessage` espera que o _checksum_ esteja codificado em hexadecimal (podendo conter letras maiúsculas ou minúsculas). A função deve falhar quando o _checksum_ for inválido.
 
