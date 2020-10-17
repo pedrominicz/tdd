@@ -19,7 +19,7 @@ Qualquer sequência de 128-bits é um _hash_ MD5 válido, qualquer sequência de
 Sendo assim, dividimos os testes da função `verifyMessage` em nove partições de equivalência, correspondendo à tabela abaixo:
 
 |            | **Hash correta**             | **Hash incorreta**             | **Hash inválida**    |
-|------------|------------------------------|--------------------------------|----------------------|
+|:----------:|------------------------------|--------------------------------|----------------------|
 | **MD5**    | Hash MD5 válida e correta    | Hash MD5 válida e incorreta    | Hash MD5 inválida    |
 | **SHA1**   | Hash SHA1 válida e correta   | Hash SHA1 válida e incorreta   | Hash SHA1 inválida   |
 | **SHA256** | Hash SHA256 válida e correta | Hash SHA256 válida e incorreta | Hash SHA256 inválida |
