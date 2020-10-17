@@ -2,7 +2,7 @@
 
 Hark é um flexível gerador e verificador de checksum. É possível gerar checksums MD5, SHA1 ou SHA256 para qualquer string.
 
-A criação de checksums é feita através da função `hashMessage`.
+A criação de checksums é feita através da função [`hashMessage`][1].
 
 ```java
 // Hash with a specifig algorithm.
@@ -11,7 +11,7 @@ public String hashMessage(final Type hashType, final String message);
 
 Dividimos os testes da função `hashMessage` em três partições, uma para cada algoritmo: MD5, SHA1 e SHA256.
 
-A verificação de hashes é feita pela função `verifyMessage`.
+A verificação de hashes é feita pela função [`verifyMessage`][5].
 
 ```java
 // Verify with a specifig algorithm.
@@ -31,7 +31,8 @@ Sendo assim, dividimos os testes da função `verifyMessage` em nove partições
 A função `verifyMessage` não fez parte da primeira entrega. A adicionei pois julguei necessário prover um exemplo com mais partições de equivalência.
 
 **TODO:**
-- Estado verde
-- Estado azul
 - Adicionar links para as funções `hashMessage` e `verifyMessage`
 - Adicionar links para cada uma das partições de equivalência
+
+[1]: src/main/java/hark/hash/HashImpl.java#L15
+[5]: src/main/java/hark/hash/HashImpl.java#L49
