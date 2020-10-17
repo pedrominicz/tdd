@@ -1,8 +1,8 @@
 ### Hark: listen!
 
-Hark é um flexível gerador e verificador de _checksum_. É possível gerar _checksums_ MD5, SHA1 ou SHA256 para qualquer _string_.
+Hark é um flexível gerador e verificador de checksum. É possível gerar checksums MD5, SHA1 ou SHA256 para qualquer string.
 
-A criação de _checksums_ é feita através da função `hashMessage`.
+A criação de checksums é feita através da função `hashMessage`.
 
 ```java
 // Hash with a specifig algorithm.
@@ -11,14 +11,14 @@ public String hashMessage(final Type hashType, final String message);
 
 Dividimos os testes da função `hashMessage` em três partições, uma para cada algoritmo: MD5, SHA1 e SHA256.
 
-A verificação de _hashs_ é feita pela função `verifyMessage`.
+A verificação de hashes é feita pela função `verifyMessage`.
 
 ```java
 // Verify with a specifig algorithm.
 public boolean verifyMessage(final Type hashType, final String checksum, final String message);
 ```
 
-Qualquer sequência de 128-bits é um _hash_ MD5 válido, qualquer sequência de 160-bits é um _hash_ SHA1 válido e, finalmente, qualquer sequência de 256-bits é um _hash_ SHA256 válido. Para simplicidade, a função `verifyMessage` espera que o _checksum_ esteja codificado em hexadecimal (podendo conter letras maiúsculas ou minúsculas). A função deve falhar quando o _checksum_ for inválido.
+Qualquer sequência de 128-bits é um hash MD5 válido, qualquer sequência de 160-bits é um hash SHA1 válido e, finalmente, qualquer sequência de 256-bits é um hash SHA256 válido. Para simplicidade, a função `verifyMessage` espera que o checksum esteja codificado em hexadecimal (podendo conter letras maiúsculas ou minúsculas). A função deve falhar quando o checksum for inválido.
 
 Sendo assim, dividimos os testes da função `verifyMessage` em nove partições de equivalência, correspondendo à tabela abaixo:
 
@@ -33,5 +33,5 @@ A função `verifyMessage` não fez parte da primeira entrega. A adicionei pois 
 **TODO:**
 - Estado verde
 - Estado azul
-- Adicionar _links_ para as funções `hashMessage` e `verifyMessage`
-- Adicionar _links_ para cada uma das partições de equivalência
+- Adicionar links para as funções `hashMessage` e `verifyMessage`
+- Adicionar links para cada uma das partições de equivalência
