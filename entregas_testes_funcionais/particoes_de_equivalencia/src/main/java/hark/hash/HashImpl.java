@@ -2,7 +2,6 @@ package hark.hash;
 
 import java.nio.charset.StandardCharsets;
 
-import com.google.common.hash.HashCode;
 import com.google.common.hash.Hashing;
 
 public class HashImpl implements Hash {
@@ -12,6 +11,8 @@ public class HashImpl implements Hash {
     }
 
     @Override
+    // MD5 and SHA1 are deprecated.
+    @SuppressWarnings("deprecation")
     public String hashMessage(final Type hashType, final String message) {
         switch (hashType) {
             case MD5:
