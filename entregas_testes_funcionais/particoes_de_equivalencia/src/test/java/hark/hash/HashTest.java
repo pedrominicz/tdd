@@ -84,7 +84,7 @@ public class HashTest {
     public void verifyMessageMD5Invalid() {
         final String checksum = "invalid";
 
-        assertThrows(RuntimeException.class, () -> {
+        assertThrows(HashException.class, () -> {
             hash.verifyMessage(Hash.Type.MD5, checksum, message);
         }, "Verify invalid checksum (MD5)");
     }
@@ -109,7 +109,7 @@ public class HashTest {
     public void verifyMessageSHA1Invalid() {
         final String checksum = "invalid";
 
-        assertThrows(RuntimeException.class, () -> {
+        assertThrows(HashException.class, () -> {
             hash.verifyMessage(Hash.Type.SHA1, checksum, message);
         }, "Verify invalid checksum (SHA1)");
     }
@@ -134,7 +134,7 @@ public class HashTest {
     public void verifyMessageSHA256Invalid() {
         final String checksum = "invalid";
 
-        assertThrows(RuntimeException.class, () -> {
+        assertThrows(HashException.class, () -> {
             hash.verifyMessage(Hash.Type.SHA256, checksum, message);
         }, "Verify invalid checksum (SHA256)");
     }
