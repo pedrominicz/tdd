@@ -30,11 +30,11 @@ Sendo assim, dividimos os testes da função `verifyMessage` em nove partições
 
 A função `verifyMessage` não fez parte da primeira entrega. A adicionei pois julguei necessário prover um exemplo com mais partições de equivalência.
 
-[1]: src/main/java/hark/hash/HashImpl.java#L15
+[1]: src/main/java/hark/hash/HashImpl.java#L16
 [2]: src/test/java/hark/hash/HashTest.java#L30
 [3]: src/test/java/hark/hash/HashTest.java#L38
 [4]: src/test/java/hark/hash/HashTest.java#L46
-[5]: src/main/java/hark/hash/HashImpl.java#L49
+[5]: src/main/java/hark/hash/HashImpl.java#L50
 [6]: src/test/java/hark/hash/HashTest.java#L69
 [7]: src/test/java/hark/hash/HashTest.java#L76
 [8]: src/test/java/hark/hash/HashTest.java#L84
