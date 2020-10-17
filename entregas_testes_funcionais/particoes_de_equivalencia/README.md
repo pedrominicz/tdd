@@ -32,3 +32,4 @@ A função `verifyMessage` não fez parte da primeira entrega. A adicionei pois 
 - Estado verde
 - Estado azul
 - Adicionar _links_ para as funções `hashMessage` e `verifyMessage`
+- Adicionar _links_ para cada uma das partições de equivalência
