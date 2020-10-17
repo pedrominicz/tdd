@@ -31,8 +31,6 @@ Sendo assim, dividimos os testes da função `verifyMessage` em nove partições
 A função `verifyMessage` não fez parte da primeira entrega. A adicionei pois julguei necessário prover um exemplo com mais partições de equivalência.
 
 **TODO:**
-- Adicionar paragrafo explicando as partições da função `verifyMessage`
-- Estado vermelho
 - Estado verde
 - Estado azul
 - Adicionar _links_ para as funções `hashMessage` e `verifyMessage`
