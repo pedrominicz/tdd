@@ -1,3 +1,11 @@
+[Video](https://www.youtube.com/watch?v=gK0TVhje6Yg)
+
+- [Red](https://github.com/pedrominicz/tdd/tree/2b55a1ff29abbcadcc7024f9ab4966967465f239/entregas_testes_funcionais/particoes_de_equivalencia)
+- [Green](https://github.com/pedrominicz/tdd/tree/93cbaad9d79229bbc290111af02c89c20e7257e7/entregas_testes_funcionais/particoes_de_equivalencia)
+- [Blue](https://github.com/pedrominicz/tdd/tree/967fa9023372feca4d020de5e9787aba59ec7fc8/entregas_testes_funcionais/particoes_de_equivalencia)
+
+---
+
 ### Hark: listen!
 
 Hark é um flexível gerador e verificador de checksum. É possível gerar checksums MD5, SHA1 ou SHA256 para qualquer string.
