@@ -27,7 +27,8 @@ class Aluguel():
 
             calcular_button = driver.find_element_by_id('botao')
             calcular_button.click()
-            sleep(0.5)
+
+            sleep(1)
 
             calculado_input = driver.find_element_by_id('resposta')
             result = float(calculado_input.get_attribute('value'))
